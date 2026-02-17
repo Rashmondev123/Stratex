@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratex - Expert Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="strate.css">
+</head>
+<body>
+
+    <!-- MOBILE NAV OVERLAY -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo-group">
+                <div class="logo-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
+                        <path d="M22 2L11 13"></path>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </div>
+                <span class="logo-text">Stratex</span>
+            </div>
+            <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+        </div>
+        <ul>
+            <li><a href="#" onclick="closeMobileNav()">Services</a></li>
+            <li><a href="#" onclick="closeMobileNav()">Features</a></li>
+            <li><a href="#" onclick="closeMobileNav()">Pricing</a></li>
+            <li><a href="#" onclick="closeMobileNav()">How it works</a></li>
+        </ul>
+        <button class="btn-get-touch" onclick="closeMobileNav()">
+            Get in touch
+            <div class="circle-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo-group">
+            <div class="logo-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3">
+                    <path d="M22 2L11 13"></path>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </div>
+            <span class="logo-text">Stratex</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">How it work</a></li>
+        </ul>
+
+        <button class="btn-get-touch">
+            Get in touch
+            <div class="circle-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </div>
+        </button>
+
+        <!-- Hamburger for mobile -->
+        <button class="hamburger" onclick="openMobileNav()">☰</button>
+    </nav>
+
+    <main class="hero-container">
+
+        <!-- HERO -->
+        <section class="hero-card">
+            <div class="hero-content">
+                <div class="rating-stars">
+                    <span style="letter-spacing: 2px;">★★★★★</span>
+                    <span style="font-weight: 500;">Rated 4.9/5</span>
+                </div>
+                <h1 class="hero-title">Expert consulting that drives real growth</h1>
+                <p class="hero-desc">Elevate your business with expert insights, tailored strategies, and unwavering support designed</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-white-pill">
+                        Get in touch
+                        <div class="circle-arrow" style="background: var(--primary-dark); color: white; width:28px; height:28px;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" style="color: white; text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.4);">What we do</a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000" alt="Consultant Professional">
+            </div>
+        </section>
+
+        <!-- BENEFITS SECTION -->
+        <section class="benefits-section">
+            <div class="section-badge" style="justify-content: flex-start;">Features</div>
+            <h2 class="section-h2" style="text-align: left; margin-bottom: 20px;">Key benefits that set us apart from other firms</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Unlimited consultations</h3>
+                    <p>Schedule as many strategy sessions as needed to your business</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <h3>Tailored solutions</h3>
+                    <p>Get customized strategies designed to fit your unique goals</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    </div>
+                    <h3>Expert insights</h3>
+                    <p>Leverage industry-leading expertise to drive informed decisions</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                    </div>
+                    <h3>Data strategies</h3>
+                    <p>Make confident moves with insights backed by research & analytics</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Ongoing support</h3>
+                    <p>Stay ahead with continuous guidance and recommendation</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                    </div>
+                    <h3>Seamless execution</h3>
+                    <p>From planning to implementation, we ensure a smooth process</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT SECTION -->
+        <section class="impact-section">
+            <div class="section-badge">Impact</div>
+            <h2 class="section-h2">Real results that drive lasting impact for everyone</h2>
+            <p class="section-desc">We deliver tailored strategies, innovative solutions, and dedicated support to drive lasting growth.</p>
+            <div class="impact-layout">
+                <div class="impact-stats-left">
+                    <div class="stat-item">
+                        <div class="stat-value">$7M+</div>
+                        <div class="stat-label">Revenue Generated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">72%</div>
+                        <div class="stat-label">Growth Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">65%</div>
+                        <div class="stat-label">Skills Improved</div>
+                    </div>
+                </div>
+                <div class="impact-image-container">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800" alt="Professional Expert">
+                </div>
+                <div class="impact-stats-right">
+                    <div class="stat-item">
+                        <div class="stat-value">78%</div>
+                        <div class="stat-label">Social Impact</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1%</div>
+                        <div class="stat-label">Top Designers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">10+</div>
+                        <div class="stat-label">Consultants</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section id="team" class="team-section">
+            <div class="reveal">
+                <div class="section-badge">Our team</div>
+                <h2 class="section-h2">Meet the experts behind your success</h2>
+                <p class="section-desc">Our diverse team of world-class strategists, analysts, and designers work together to build your future.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-img-box">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" alt="Marcus Chen">
+                    </div>
+                    <div class="team-info">
+                        <div>
+                            <h3 class="team-name">Marcus Chen</h3>
+                            <p class="team-role">Chief Strategy Officer</p>
+                        </div>
+                        <a href="#" class="team-social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card reveal" style="transition-delay: 0.1s;">
+                    <div class="team-img-box">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" alt="Elena Rodriguez">
+                    </div>
+                    <div class="team-info">
+                        <div>
+                            <h3 class="team-name">Elena Rodriguez</h3>
+                            <p class="team-role">Head of Growth</p>
+                        </div>
+                        <a href="#" class="team-social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card reveal" style="transition-delay: 0.2s;">
+                    <div class="team-img-box">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800" alt="David Park">
+                    </div>
+                    <div class="team-info">
+                        <div>
+                            <h3 class="team-name">David Park</h3>
+                            <p class="team-role">Financial Analyst</p>
+                        </div>
+                        <a href="#" class="team-social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card reveal" style="transition-delay: 0.3s;">
+                    <div class="team-img-box">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800" alt="Aisha Khan">
+                    </div>
+                    <div class="team-info">
+                        <div>
+                            <h3 class="team-name">Aisha Khan</h3>
+                            <p class="team-role">Lead Design Partner</p>
+                        </div>
+                        <a href="#" class="team-social-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <section class="testimonial-section">
+            <div class="testimonial-rating">
+                <span style="letter-spacing: 2px;">★★★★★</span>
+                <span>Rated 4.9/5</span>
+            </div>
+            <h2 class="testimonial-quote">Stratex revolutionized our customer understanding, boosting retention like never before.</h2>
+            <div class="user-profile">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Muzamal Hussain" class="avatar">
+                <div class="user-name">Muzamal Hussain</div>
+                <div class="status-labels">
+                    <div class="label-pill"><div class="dot"></div> High conversion</div>
+                    <div class="label-pill"><div class="dot"></div> 2x sales</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section class="pricing-section">
+            <div class="pricing-header">
+                <div class="section-badge">Pricing</div>
+                <h2 class="section-h2" style="margin-bottom: 20px;">Flexible pricing tailored to your business needs</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <p class="p-desc">Perfect for small teams looking to streamline consulting processes</p>
+                    <div class="price-tag">$99 <span>/Month</span></div>
+                    <ul class="feature-list">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Personalized strategy sessions</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Essential business analytics</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Core reporting tools</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 5 team members</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated email support</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Customizable workflow insights</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing btn-pricing-outline">Request Consultation</a>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="popular-badge">Popular</div>
+                    <h3>Premium</h3>
+                    <p class="p-desc">Designed for growing consulting firms needing insights & support.</p>
+                    <div class="price-tag">$299 <span>/Month</span></div>
+                    <ul class="feature-list">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited strategy consultations</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Advanced business analytics</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 10 team members</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Comprehensive reporting suite</li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Priority email & chat support</li>
+                    </ul>
+                    <a href="#contact" class="btn-pricing btn-pricing-solid">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-section">
+            <div class="section-badge">Why choose us</div>
+            <h2 class="section-h2">Expert consulting tailored to your business success</h2>
+            <div class="compare-grid">
+                <div class="compare-card card-gray">
+                    <h3 class="compare-h3">Other Firms</h3>
+                    <div class="list-item">
+                        <div class="check-circle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9bbbb4" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div class="list-content">
+                            <h4>Generic Strategies</h4>
+                            <p>One-size-fits-all solutions that lack personalized insights and flexibility.</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="check-circle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9bbbb4" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <div class="list-content">
+                            <h4>Limited Guidance</h4>
+                            <p>Clients are left to navigate complex challenges with minimal expert support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="compare-card card-green">
+                    <h3 class="compare-h3">With Stratex</h3>
+                    <div class="list-item">
+                        <div class="check-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1a473d"/><polyline points="16 9 11 14 8 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="list-content">
+                            <h4>Tailored Consulting</h4>
+                            <p>Custom strategies designed to fit your unique business needs and goals.</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="check-circle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1a473d"/><polyline points="16 9 11 14 8 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="list-content">
+                            <h4>Dedicated Support</h4>
+                            <p>Expert guidance and hands-on assistance at every stage of your journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="why-section" style="padding-top: 0;">
+            <div class="section-badge">Our Expertise</div>
+            <h2 class="section-h2">Reliable expertise to drive your greatest success</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <h3>Market Analysis</h3>
+                    <p>Deep dives into competitive landscapes to identify untapped opportunities.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Operational Efficiency</h3>
+                    <p>Streamlining workflows to reduce overhead and increase team output.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Growth Funding</h3>
+                    <p>Connecting high-potential startups with the right investment partners.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how-section">
+            <div class="section-badge">How it works</div>
+            <h2 class="section-h2">A proven process to achieve your biggest goals</h2>
+            <div class="steps-wrapper">
+                <div class="step-row">
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="Booking">
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">01</div>
+                        <h3>Simple Booking</h3>
+                        <p>Effortlessly schedule a consultation to discuss your business needs and challenges. We streamline the process to get started quickly.</p>
+                        <a href="#contact" class="discover-more">Discover More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Strategy">
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">02</div>
+                        <h3>Tailored Strategy</h3>
+                        <p>We analyze your goals and create a customized strategy designed to drive measurable success for your business needs.</p>
+                        <a href="#contact" class="discover-more">Discover More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="Support">
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">03</div>
+                        <h3>Continuous Support</h3>
+                        <p>From implementation to optimization, we provide ongoing guidance and adjustments to ensure long-term growth for your business.</p>
+                        <a href="#contact" class="discover-more">Discover More <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="faq-section">
+            <div class="reveal">
+                <div class="section-badge">Questions</div>
+                <h2 class="section-h2">Frequently asked questions</h2>
+                <p class="section-desc">Find answers to common questions about our methodology and partnership process.</p>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do we start working together?
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We begin with a discovery call to understand your business goals and challenges. From there, we develop a tailored proposal and strategic roadmap to ensure our goals are perfectly aligned.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What industries do you specialize in?
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we are industry-agnostic, we have extensive experience in Tech, Finance, Consumer Goods, and B2B Services. Our core strength lies in applying proven strategic principles to any complex business environment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a typical consulting project last?
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project duration varies based on scope. Strategy sprints usually last 4-6 weeks, while large-scale implementation and transformation projects can span 6 to 12 months.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide implementation support?
+                        <div class="faq-icon"></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Unlike traditional firms that only deliver reports, we stay by your side to ensure the strategies are executed effectively, providing hands-on support and training for your team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-image-box reveal">
+                    <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=1200" alt="Customer Care Team">
+                </div>
+                <div class="contact-form-container">
+                    <div class="contact-header reveal">
+                        <div class="section-badge" style="justify-content: flex-start;">Contact Us</div>
+                        <h2>Get in touch with our experts team</h2>
+                        <p>We're ready to help you navigate your next business milestone.</p>
+                    </div>
+                    <form class="reveal" onsubmit="event.preventDefault(); alert('Form submitted! We will contact you soon.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Budget Range</label>
+                                <select required>
+                                    <option value="">Select a range</option>
+                                    <option>$5k - $10k</option>
+                                    <option>$10k - $50k</option>
+                                    <option>$50k+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Services Interested In</label>
+                            <div class="services-selection">
+                                <div class="service-pill" onclick="this.classList.toggle('active')">Business Strategy</div>
+                                <div class="service-pill" onclick="this.classList.toggle('active')">Market Analysis</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>How can we help?</label>
+                            <textarea rows="4" placeholder="Tell us about your project goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit your form</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo-group">
+                        <div class="logo-box">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </div>
+                        <span class="logo-text">Stratex</span>
+                    </a>
+                    <p>Advanced consulting solutions designed for the modern enterprise.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Stratex. Developed by <strong>Rashmon.dev</strong></p>
+                <p>All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // ============================================
+        // MOBILE NAV
+        // ============================================
+        function openMobileNav() {
+            document.getElementById('mobileNav').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileNav() {
+            document.getElementById('mobileNav').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // ============================================
+        // FAQ ACCORDION
+        // ============================================
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Open clicked (if wasn't already open)
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // ============================================
+        // SCROLL REVEAL ANIMATION
+        // ============================================
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        window.addEventListener('load', reveal);
+    </script>
+
+</body>
+</html>
